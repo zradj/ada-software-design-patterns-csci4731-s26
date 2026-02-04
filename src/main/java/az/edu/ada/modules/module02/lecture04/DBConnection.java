@@ -7,10 +7,10 @@ public class DBConnection {
     }
 
     private static final class DBConnectionInstanceHolder {
-        private static final DBConnection instance = new DBConnection();
+        private static final DBConnection INSTANCE = new DBConnection();
     }
 
     public static DBConnection getInstance() {
-        return DBConnectionInstanceHolder.instance;
+        return DBConnectionInstanceHolder.INSTANCE;
     }
 }
