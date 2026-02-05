@@ -19,8 +19,9 @@ public class Dragon {
         return healthPoints;
     }
 
-    public void loadTexture() {
+    public void loadTexture() throws InterruptedException {
         System.out.println("Loading texture from DB... (takes a lot of time!)");
+        Thread.sleep(5000);
         texture = new byte[] {};
     }
 }
