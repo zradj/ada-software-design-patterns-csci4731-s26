@@ -4,6 +4,6 @@ public class WinCheckbox implements Checkbox {
 
     @Override
     public void render() {
-        System.out.println("Win checkbox rendered");
+        System.out.println("Windows checkbox rendered");
     }
 }
