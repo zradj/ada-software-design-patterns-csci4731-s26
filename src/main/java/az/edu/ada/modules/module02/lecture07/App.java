@@ -1,14 +1,15 @@
 package az.edu.ada.modules.module02.lecture07;
 
 public class App {
-    public static final String OS = "Win";
+
+    public static final String OS = System.getProperty("os.name");
 
     public static void main(String[] args) {
         GUIFactory guiFactory = null;
 
-        if (OS.equals("Win")) {
+        if (OS.startsWith("Windows")) {
             guiFactory = new WinGUIFactory();
-        } else if (OS.equals("Mac")) {
+        } else if (OS.startsWith("Mac")) {
             guiFactory = new MacGUIFactory();
         }
 
